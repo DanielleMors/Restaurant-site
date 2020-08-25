@@ -54,6 +54,16 @@ h2 {
     font-size: 20px;
 }
 
+h3 {
+    font-family: 'Avenir';
+    font-size: 20px;
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+}
+
 .dish-item > button {
     margin-top: auto;
     background: #52433F;
@@ -82,7 +92,7 @@ article > img {
 
 footer {
     background-color: #52433F;
-    padding: 1.5rem;
+    /*    padding: 1rem;*/
 
 }
 
