@@ -1,17 +1,29 @@
 header {
     background-color: white;
-
 }
 
 .dani {
     font-family: 'Didot', sans-serif;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #52433F;
 }
 
 nav li {
     font-family: 'Didot', sans-serif;
     display: inline;
     margin: 2vw;
+    color: white;
+    cursor: pointer;
+
 }
 
 li a {
@@ -49,22 +61,28 @@ h2 {
     padding: 0.5rem;
     border: none;
     border-radius: 1vw;
-    font-size: 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+
 }
 
 article {
     border-radius: 3%;
     border: 1px solid grey;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding: 1.4rem;
 }
 
 article > img {
     order: -1;
-    align-self: center;
     width: 100%;
     height: auto;
+    border-radius: 4%;
+
+}
+
+footer {
+    background-color: #52433F;
+    padding: 1.5rem;
 
 }
 
