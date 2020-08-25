@@ -1,8 +1,42 @@
+header {
+    background-color: white;
+
+}
+
+.dani {
+    font-family: 'Didot', sans-serif;
+    font-size: 30px;
+}
+
 nav li {
+    font-family: 'Didot', sans-serif;
     display: inline;
     margin: 2vw;
 }
 
 li a {
     text-decoration: none;
+}
+
+
+body {}
+
+main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+p {
+    font-family: 'Avenir';
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Avenir';
+    font-size: 22px;
+}
+
+h2 {
+     font-family: 'Avenir';
+    font-size: 20px;
 }
