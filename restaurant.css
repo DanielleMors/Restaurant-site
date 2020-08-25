@@ -24,6 +24,7 @@ body {}
 main {
     margin-left: 10vw;
     margin-right: 10vw;
+    padding: 3rem;
 }
 
 p {
@@ -48,33 +49,37 @@ h2 {
     padding: 0.5rem;
     border: none;
     border-radius: 1vw;
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 article {
     border-radius: 3%;
     border: 1px solid grey;
-    padding: 2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 article > img {
     order: -1;
     align-self: center;
+    width: 100%;
+    height: auto;
+
 }
 
-    /* CSS that applies to browsers that support grid */
+/* CSS that applies to browsers that support grid */
 @supports (display: grid) {
-
 
     main {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        /* Keep adding new columns - even if theres is no content for them. content does not alwys take up full width */
-        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-        /* Don't add more columns than theres is content for. && +content "always" take full width */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-gap: 1rem;
     }
-} /* END @supports grid */
+
+}
+
+/* END @supports grid */
 
 
 
