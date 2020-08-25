@@ -40,3 +40,13 @@ h2 {
      font-family: 'Avenir';
     font-size: 20px;
 }
+
+.dish-item > button {
+    margin-top: auto;
+    background: #52433F;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+}
