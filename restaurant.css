@@ -52,19 +52,22 @@ h1 {
 h2 {
     font-family: 'Avenir';
     font-size: 20px;
+    grid-area: h2;
 }
 
 h3 {
     font-family: 'Avenir';
     font-size: 18px;
     font-weight: 500;
+    grid-area: h3;
 }
 
 h4 {
     font-family: 'Avenir';
     font-size: 15px;
-    font-weight: 200;
-    color: green;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: -1rem;
 }
 
 li {
@@ -76,6 +79,13 @@ li {
     display: flex;
     justify-content: space-between;
     margin-bottom: -1.5vw;
+}
+
+.title-price-gr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h2 ic ic h3";
 }
 
 
@@ -125,6 +135,13 @@ div > img {
 .icon {
     width: 1rem;
     height: 1.5rem;;
+}
+
+.icon-leave {
+    width: .9rem;
+    height: auto;
+    grid-area: ic;
+    padding-top: 1.2rem;
 }
 
 .icon2 {
@@ -186,5 +203,6 @@ footer {
     nav li {
         font-size: 1.2vw;
     }
+
 
 }
