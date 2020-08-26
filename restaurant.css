@@ -70,6 +70,13 @@ h4 {
     margin-top: -1rem;
 }
 
+h5 {
+    font-family: 'Avenir';
+    font-size: 20px;
+    font-weight: 900;
+    color: darkred;
+}
+
 li {
      font-family: 'Avenir';
     font-size: 15px;
@@ -149,10 +156,21 @@ div > img {
     height: auto;
 }
 
+.starters {
+    margin-bottom: 5vw;
+}
+
+.main {
+    margin-bottom: 5vw;
+}
+
+.sideorders {
+    margin-bottom: 5vw;
+}
 
 footer {
     background-color: #52433F;
-    /*    padding: 1rem;*/
+        padding: 1rem;
 
 }
 
