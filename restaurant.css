@@ -64,6 +64,14 @@ h3 {
     justify-content: space-between;
 }
 
+.vegetarian {
+    font-family: 'Avenir';
+    color: green;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+}
+
 .dish-item > button {
     margin-top: auto;
     background: #52433F;
