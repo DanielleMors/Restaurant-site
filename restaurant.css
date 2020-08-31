@@ -40,7 +40,6 @@ main {
 p {
     font-family: 'Avenir';
     font-size: 15px;
-    height: 120px;
 }
 
 h1 {
@@ -62,17 +61,15 @@ h3 {
     grid-area: h3;
 }
 
-.text-discount {
-    text-decoration-line: line-through;
-    color: darkred;
-}
 
 h4 {
     font-family: 'Avenir';
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
-    margin-top: -1rem;
+    grid-area: h4;
+    text-align: end;
+
 }
 
 h5 {
@@ -82,15 +79,19 @@ h5 {
     color: darkred;
 }
 
+
+
 li {
     font-family: 'Avenir';
     font-size: 15px;
 }
 
 .title-price {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: -1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h2 h2 h4 h3";
 }
 
 .img-icon {
@@ -142,14 +143,12 @@ div > img {
 }
 
 .soldOut {
-    display: block;
+    width: 100%;
     position: absolute;
-/*
-    height: 1rem;
-    width: auto;
-*/
-    background-color: hotpink;
+    background-color: #52433F;
+    color: white;
     z-index: 2;
+    font-family: 'Avenir';
 }
 
 .vegetarian {
@@ -158,6 +157,20 @@ div > img {
     justify-self: end;
     align-self: end;
     padding: .5rem;
+}
+
+.price-discount {
+    font-family: 'avenir';
+    font-style: normal;
+    text-decoration-line: line-through;
+    color: darkred;
+
+}
+
+.price {
+    text-align: end;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .icon-weed {
