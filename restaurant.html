@@ -27,359 +27,56 @@
 
     </header>
 
+    <details>
+        <summary> Filters</summary>
+        <button id="veggieFilter"> Veggie dishes </button>
+    </details>
 
     <main>
 
         <h1>Starters</h1>
+
         <section class="starters">
 
-            <article class="dish-item">
-                <div class="vegetarian">
+            <template id="productTemplate">
 
-                    <img src="img/small/guzni-sm.jpg" alt="picture of a pink guzni dish">
+                <article class="dish-item">
 
-                    <div class="title-price-gr">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                        <img class="icon-leave" src="img/vegetarian.png" alt=" dark green icon of two leaves">
-
-
+                    <div class="img-icon">
+                        <img src="img/small/guzni-sm.jpg">
+                        <img class="vegetarian" src="img/vegetarian.png" alt=" dark green icon of two leaves">
                     </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-
-
-                </div>
-
-            </article>
-
-
-            <article class="dish-item">
-                <div class="discount">
-                    <img src="img/small/groggiroshorn-sm.jpg" alt="picture of a pink guzni dish">
 
                     <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3 class="text-discount">$4.99</h3>
+                        <h2 class="dish-title">Guzni</h2>
+                        <h3 class="price">$4.99</h3>
                     </div>
 
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-            <article class="dish-item">
-                <div class="alcohol">
-                    <img src="img/small/pavlova-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
+                    <div>
+                        <p></p>
                     </div>
 
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <h4>Contains alcohol</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-
-            <article class="dish-item">
-                <div class="soldOut">
-                    <img src="img/small/kirgisiskroulade-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
+                    <div class="discount">
                     </div>
 
-                    <h3>Guzni Rødbede/Nøddeis</h3>
+                    <div class="allergens">
+                    </div>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <h5>SOLD OUT </h5>
+                    <div class="alcohol">
+                    </div>
 
-                    <!--                    <button>ORDER NOW</button>-->
-                </div>
-            </article>
+                    <h3 class="short-description"></h3>
+                    <button>More info</button>
 
 
+                </article>
+            </template>
         </section>
-
-
-        <h1>Main</h1>
-        <section class="main">
-
-            <article class="dish-item">
-                <div class="discount">
-
-                    <img src="img/small/guzni-sm.jpg" alt="picture of a pink guzni dish">
-
-                    <div class="title-price-gr">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                        <img class="icon-leave" src="img/vegetarian.png" alt=" dark green icon of two leaves">
-
-
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-
-
-                </div>
-
-            </article>
-
-
-            <article class="dish-item">
-                <div class="allergens">
-                    <img src="img/small/groggiroshorn-sm.jpg" alt="picture of a pink guzni dish">
-
-                    <div class="title-price-gr">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-
-                        <img class="icon-weed" src="img/weed.png" alt="black and white icon of milk bottle">
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-            <article class="dish-item">
-                <div class="alcohol">
-                    <img src="img/small/pavlova-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <h4>Contains alcohol</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-
-            <article class="dish-item">
-                <div class="soldOut">
-                    <img src="img/small/kirgisiskroulade-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-        </section>
-
-
-
-        <h1>Sideorders</h1>
-        <section class="sideorders">
-
-            <article class="dish-item">
-                <div class="vegetarian">
-
-                    <img src="img/small/guzni-sm.jpg" alt="picture of a pink guzni dish">
-
-                    <div class="title-price-gr">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                        <img class="icon-leave" src="img/vegetarian.png" alt=" dark green icon of two leaves">
-
-
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-
-
-                </div>
-
-            </article>
-
-
-            <article class="dish-item">
-                <div class="allergens">
-                    <img src="img/small/groggiroshorn-sm.jpg" alt="picture of a pink guzni dish">
-
-                    <div class="title-price-gr">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                        <img class="icon-weed" src="img/weed.png" alt="black and white icon of milk bottle">
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-            <article class="dish-item">
-                <div class="alcohol">
-                    <img src="img/small/pavlova-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <h4>Contains alcohol</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-
-            <article class="dish-item">
-                <div class="soldOut">
-                    <img src="img/small/kirgisiskroulade-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-
-        </section>
-
-
-
-
-        <h1>Dessert</h1>
-        <section class="dessert">
-
-            <article class="dish-item">
-                <div class="vegetarian">
-
-                    <img src="img/small/guzni-sm.jpg" alt="picture of a pink guzni dish">
-
-                    <div class="title-price-gr">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                        <img class="icon-leave" src="img/vegetarian.png" alt=" dark green icon of two leaves">
-
-
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-
-
-                </div>
-
-            </article>
-
-
-            <article class="dish-item">
-                <div class="allergens">
-                    <img src="img/small/groggiroshorn-sm.jpg" alt="picture of a pink guzni dish">
-
-                    <div class="title-price-gr">
-                        <h2>Guzni</h2>
-                        <h3 class>$4.99</h3>
-                        <img class="icon-weed" src="img/weed.png" alt="black and white icon of milk bottle">
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-            <article class="dish-item">
-                <div class="alcohol">
-                    <img src="img/small/pavlova-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <h4>Contains alcohol</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-
-            <article class="dish-item">
-                <div class="soldOut">
-                    <img src="img/small/kirgisiskroulade-sm.jpg" alt="picture of a pink guzni dish">
-                    <div class="title-price">
-                        <h2>Guzni</h2>
-                        <h3>$4.99</h3>
-                    </div>
-
-                    <h3>Guzni Rødbede/Nøddeis</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-
-                    <button>ORDER NOW</button>
-                </div>
-            </article>
-
-
-        </section>
-
-
 
     </main>
+
+
+
 
 
     <footer>
@@ -387,6 +84,8 @@
 
     </footer>
 
-<script src="restaurant.js"></script>
+    <script src="restaurant.js"></script>
 
-</body></html>
+</body>
+
+</html>
