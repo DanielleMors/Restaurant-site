@@ -34,14 +34,19 @@ if (!myProduct.vegetarian) {
     myCopy.querySelector(".vegetarian").remove();
 }
 
-//
+if (myProduct.soldout == true) {
+myCopy.querySelector(".soldOut").classList.add("hidden");
+
+}
+
+
 //if (myProduct.soldout == true)  {
 //    const p = document.querySelector("p");
 //    p.textContent = "Sold Out";
 //    p.classList.add("soldOut");
-//    myCopy.querySelector("article").appendChild
+//    myCopy.querySelector(".soldOut").appendChild
 //}
-//
+
 //    //setup classes for filtering
 //    // 1.find the artticle
 //    const.article = myCopy.querySelector("article");
@@ -51,14 +56,14 @@ if (!myProduct.vegetarian) {
 //    }
 //
 //
-////fill out the template//
-//myCopy.querySelector(".dish-title").textContent = myProduct.name;
-//myCopy.querySelector(".short-description").textContent = myProduct.name;
-//
-////append the template//
-//document.querySelector(".starters").appendChild(myCopy);
-//
-//}
+
+//fill out the template//
+myCopy.querySelector(".dish-title").textContent = myProduct.name;
+myCopy.querySelector(".short-description").textContent = myProduct.name;
+
+//append the template//
+document.querySelector(".starters").appendChild(myCopy);
+}
 //
 //const veggieFilter = document.querySelector("#veggieFilter");
 //veggieFilter.addEventListener("click", veggieFilterClicked);

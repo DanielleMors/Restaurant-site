@@ -95,9 +95,11 @@ li {
 
 .img-icon {
     display: grid;
+    position: relative;
+
 }
 
-.img-icon *{
+.img-icon * {
     grid-column: 1;
     grid-row: 1;
 }
@@ -139,10 +141,15 @@ div > img {
     height: 1.5rem;
 }
 
-div.soldOut {
+.soldOut {
+    display: block;
+    position: absolute;
+/*
     height: 1rem;
     width: auto;
+*/
     background-color: hotpink;
+    z-index: 2;
 }
 
 .vegetarian {
@@ -161,13 +168,9 @@ div.soldOut {
     padding-left: .3rem;
 }
 
-/*
-.soldOut {
-    position: absolute;
-    top: 0;
-    left: 0;
+.hidden {
+    display: none;
 }
-*/
 
 /*ADD THE POSITION ALSO TO ARTICLE/PRODUCT ' RELATIVE '*/
 
@@ -197,8 +200,8 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-gap: 1rem;
     }
-
 }
+
 /* END @supports grid */
 
 
