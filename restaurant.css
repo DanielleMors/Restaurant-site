@@ -17,11 +17,13 @@ nav {
     background-color: #52433F;
 }
 
-nav li {
+nav a {
     font-family: 'Didot', sans-serif;
     display: inline;
     margin: 2vw;
     color: white;
+    text-decoration: none;
+    text-transform: capitalize;
     cursor: pointer;
 
 }
@@ -45,6 +47,7 @@ p {
 h1 {
     font-family: 'Didot', sans-serif;
     font-size: 22px;
+    text-transform: capitalize;
 }
 
 h2 {
@@ -65,7 +68,7 @@ h3 {
 h4 {
     font-family: 'Avenir';
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
     grid-area: h4;
     text-align: end;
@@ -151,6 +154,7 @@ div > img {
     font-family: 'Avenir';
 }
 
+
 .vegetarian {
     width: 1.5rem;
     height: auto;
@@ -186,10 +190,6 @@ div > img {
 }
 
 /*ADD THE POSITION ALSO TO ARTICLE/PRODUCT ' RELATIVE '*/
-
-.starters {
-    margin-bottom: 5vw;
-}
 
 .main {
     margin-bottom: 5vw;
