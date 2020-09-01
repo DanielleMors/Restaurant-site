@@ -60,6 +60,9 @@ function showProduct(myProduct) {
     //clone the template// can be copy or called clone//
     const myCopy = temp.cloneNode(true);
 
+    const img = myCopy.querySelector(".img-dish");
+    img.setAttribute("src", `https://kea-alt-del.dk/t5/site/imgs/small/${myProduct.image}-sm.jpg`);
+
     if (myProduct.discount == 0) {
         myCopy.querySelector(".price").textContent = myProduct.price + ", -";
     } else {
