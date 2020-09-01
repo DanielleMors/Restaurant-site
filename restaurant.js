@@ -21,8 +21,6 @@ function createSections(categories) {
         h1.textContent = categorie;
         section.appendChild(h1);
         document.querySelector("main").appendChild(section);
-//        document.querySelector("main").appendChild(section);
-//        document.querySelector("section").appendChild(h1);
     })
 }
 
