@@ -81,10 +81,15 @@ function showProduct(myProduct) {
         myCopy.querySelector(".soldOut").classList.add("hidden");
     }
 
-//    if (!myProduct.alcohol) {
-//        myCopy.querySelector(".alcohol").remove();
-//        myCopy.querySelector("article").classList.add("alcoholic");
-//        }
+    if (!myProduct.alcohol) {
+        myCopy.querySelector(".alcohol").remove();
+        myCopy.querySelector("article").classList.add("alcoholic");
+        }
+
+//    if (!myProduct.allergens) {
+//        myCopy.querySelector(".allergens").remove();
+//        myCopy.querySelector("article").classList.add("lactose");
+//    }
 
     //fill out the template//
     console.log("what are you? I am a " + myProduct.category);
@@ -96,7 +101,6 @@ function showProduct(myProduct) {
     parentElem.appendChild(myCopy);
 
     //append the template//
-
 }
 
 //FILTERS//
@@ -115,7 +119,7 @@ const alcoholFilter = document.querySelector("#alcoholFilter");
 alcoholFilter.addEventListener("click", alcoholFilterClicked);
 
 function alcoholFilterClicked() {
-    const articles = document.querySelectorAll("article:not(.alcohol)");
+    const articles = document.querySelectorAll("article:not(.alcoholic)");
     articles.forEach(elem => {
         elem.classList.toggle("hidden");
     })
@@ -125,7 +129,7 @@ const lactoseFilter = document.querySelector("#lactoseFilter");
 lactoseFilter.addEventListener("click", lactoseFilterClicked);
 
 function lactoseFilterClicked() {
-    const articles = document.querySelectorAll("article:not(.allergens)");
+    const articles = document.querySelectorAll("article:not(.lactose)");
     articles.forEach(elem => {
         elem.classList.toggle("hidden");
     })

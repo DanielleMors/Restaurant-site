@@ -182,9 +182,9 @@ div > img {
     padding: .5rem;
 }
 
-.alcohol-img {
-    width: 1.3rem;
-    height: auto;
+.alcohol p {
+    font-style: italic;
+    font-size: 13px;
 }
 
 .price-discount {
