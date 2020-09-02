@@ -174,7 +174,7 @@ div > img {
 }
 
 
-.vegetarian{
+.vegetarian {
     width: 1.5rem;
     height: auto;
     justify-self: end;
@@ -211,6 +211,26 @@ div > img {
 
 .hidden {
     display: none;
+}
+
+.modal-background {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: 3px;
+    border-radius: 2rem;
+    width: 50%;
+    height: auto;
+    margin: 10rem;
+    padding: 2rem;
 }
 
 /*ADD THE POSITION ALSO TO ARTICLE/PRODUCT ' RELATIVE '*/

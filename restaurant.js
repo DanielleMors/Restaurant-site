@@ -84,23 +84,40 @@ function showProduct(myProduct) {
     if (!myProduct.alcohol) {
         myCopy.querySelector(".alcohol").remove();
         myCopy.querySelector("article").classList.add("alcoholic");
-        }
+    }
 
-//    if (!myProduct.allergens) {
-//        myCopy.querySelector(".allergens").remove();
-//        myCopy.querySelector("article").classList.add("lactose");
-//    }
+    //    if (!myProduct.allergens) {
+    //        myCopy.querySelector(".allergens").remove();
+    //        myCopy.querySelector("article").classList.add("lactose");
+    //    }
 
     //fill out the template//
     console.log("what are you? I am a " + myProduct.category);
     myCopy.querySelector(".dish-title").textContent = myProduct.name;
     myCopy.querySelector(".short-description").textContent = myProduct.name;
 
+    myCopy.querySelector("button").addEventListener("click", () => {
+        fetch(`https://kea-alt-del.dk/t5/api/product?id=`+myProduct.id)
+            .then(res => res.json())
+            .then(showDetails);
+    });
+
 
     const parentElem = document.querySelector("section#" + myProduct.category);
     parentElem.appendChild(myCopy);
 
     //append the template//
+}
+
+
+const modal = document.querySelector(".modal-background");
+
+//the moment we have our data//
+function showDetails(data) {
+    modal.querySelector(".modal-name").textContent = data.name;
+    modal.querySelector(".modal-description").textContent = data.longdescription;
+    //...
+    modal.classList.remove("hidden");
 }
 
 //FILTERS//
@@ -134,3 +151,11 @@ function lactoseFilterClicked() {
         elem.classList.toggle("hidden");
     })
 }
+
+
+//MODAL//
+
+//close the modal when clicked
+modal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+});
