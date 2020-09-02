@@ -24,8 +24,8 @@ nav {
 nav a {
     font-family: 'Didot', sans-serif;
     display: inline;
-    margin: 2vw;
     color: white;
+    padding: 1rem;
     text-decoration: none;
     text-transform: capitalize;
     cursor: pointer;
@@ -34,6 +34,13 @@ nav a {
 
 li a {
     text-decoration: none;
+}
+
+summary {
+    font-family: 'Avenir';
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -54,6 +61,7 @@ h1 {
     text-transform: capitalize;
     grid-column: 1 / -1;
     margin-top: 4rem;
+    margin-bottom: -.5rem;
 }
 
 h2 {
@@ -116,6 +124,8 @@ li {
 
 button {
     margin-top: auto;
+    width: 100%;
+    height: auto;
     background: #52433F;
     color: white;
     padding: 0.5rem;
@@ -153,20 +163,28 @@ div > img {
 
 .soldOut {
     width: 100%;
+    height: auto;
     position: absolute;
-    background-color: #52433F;
+    background-color: darkred;
     color: white;
     z-index: 2;
     font-family: 'Avenir';
+    font-weight: 500;
+    margin-top: .5rem;
 }
 
 
-.vegetarian {
+.vegetarian{
     width: 1.5rem;
     height: auto;
     justify-self: end;
     align-self: end;
     padding: .5rem;
+}
+
+.alcohol-img {
+    width: 1.3rem;
+    height: auto;
 }
 
 .price-discount {

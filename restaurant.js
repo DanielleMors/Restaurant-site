@@ -74,11 +74,17 @@ function showProduct(myProduct) {
 
     if (!myProduct.vegetarian) {
         myCopy.querySelector(".vegetarian").remove();
+        myCopy.querySelector("article").classList.add("veg");
     }
 
     if (myProduct.soldout == false) {
         myCopy.querySelector(".soldOut").classList.add("hidden");
     }
+
+//    if (!myProduct.alcohol) {
+//        myCopy.querySelector(".alcohol").remove();
+//        myCopy.querySelector("article").classList.add("alcoholic");
+//        }
 
     //fill out the template//
     console.log("what are you? I am a " + myProduct.category);
@@ -86,40 +92,12 @@ function showProduct(myProduct) {
     myCopy.querySelector(".short-description").textContent = myProduct.name;
 
 
-        const parentElem = document.querySelector("section#" + myProduct.category);
-        parentElem.appendChild(myCopy);
+    const parentElem = document.querySelector("section#" + myProduct.category);
+    parentElem.appendChild(myCopy);
 
-        //append the template//
+    //append the template//
 
 }
-
-
-
-
-
-
-
-
-
-//still need to add this!!!!!!!!!
-
-//if (myProduct.soldout == true)  {
-//    const p = document.querySelector("p");
-//    p.textContent = "Sold Out";
-//    p.classList.add("soldOut");
-//    myCopy.querySelector(".soldOut").appendChild
-//}
-//
-//    //setup classes for filtering
-//    // 1.find the artticle
-//    const.article = myCopy.querySelector("article");
-//    // 2. add classes
-//    if (myProduct.vegetarian) {
-//        article.classList.add("vegetarian");
-//    }
-
-
-
 
 //FILTERS//
 
@@ -127,7 +105,7 @@ const veggieFilter = document.querySelector("#veggieFilter");
 veggieFilter.addEventListener("click", veggieFilterClicked);
 
 function veggieFilterClicked() {
-    const articles = document.querySelectorAll("article:not(.vegetarian)");
+    const articles = document.querySelectorAll("article.veg");
     articles.forEach(elem => {
         elem.classList.toggle("hidden");
     })
