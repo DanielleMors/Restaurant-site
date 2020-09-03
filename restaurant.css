@@ -11,25 +11,26 @@ html {
     font-size: 30px;
     display: flex;
     justify-content: center;
-    padding: 2rem;
-
+    padding: 4rem;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: #52433F;
+/*    background-color: #52433F;*/
+
 }
 
 nav a {
-    font-family: 'Didot', sans-serif;
+    font-family: 'avenir', sans-serif;
     display: inline;
-    color: white;
-    padding: 1rem;
+    color: black;
+    font-size: 18px;
+    width: 8%;
+    padding: .5rem;
     text-decoration: none;
     text-transform: capitalize;
     cursor: pointer;
-
 }
 
 li a {
@@ -37,7 +38,7 @@ li a {
 }
 
 summary {
-    font-family: 'Avenir';
+    font-family: 'Didot';
     font-size: 15px;
     display: flex;
     justify-content: flex-end;
@@ -45,8 +46,9 @@ summary {
 
 
 main {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    margin-top: -4rem;
     padding: 3rem;
 }
 
@@ -56,12 +58,12 @@ p {
 }
 
 h1 {
-    font-family: 'Didot', sans-serif;
+    font-family: 'avenir', sans-serif;
     font-size: 22px;
     text-transform: capitalize;
     grid-column: 1 / -1;
     margin-top: 4rem;
-    margin-bottom: -.5rem;
+    text-align: center;
 }
 
 h2 {
@@ -75,6 +77,7 @@ h3 {
     font-family: 'Avenir';
     font-size: 15px;
     font-weight: 400;
+    line-height: 1vw;
     grid-area: h3;
 }
 
@@ -86,7 +89,6 @@ h4 {
     font-style: italic;
     grid-area: h4;
     text-align: end;
-
 }
 
 h5 {
@@ -95,8 +97,6 @@ h5 {
     font-weight: 900;
     color: darkred;
 }
-
-
 
 li {
     font-family: 'Avenir';
@@ -122,7 +122,9 @@ li {
     grid-row: 1;
 }
 
-button {
+
+
+.more-info {
     margin-top: auto;
     width: 100%;
     height: auto;
@@ -132,14 +134,33 @@ button {
     border: none;
     border-radius: 1vw;
     font-size: .8rem;
+    opacity: 100;
+    transition: 0.5s;
     cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+
+details > button {
+    background-color: purple;
+    border-radius: .5rem;
+    padding: .3rem;
+    border: 1.5px solid black;
+    color: white;
 }
 
 
 article {
-    border-radius: 3%;
-    border: 1px solid grey;
+    /*    border-radius: 3%;*/
+/*    border: 1px solid grey;*/
     padding: 1.4rem;
+    background-color: #FFEAC9;
+    display: flex;
+    flex-direction: column;
+
 }
 
 article > img {
@@ -169,10 +190,10 @@ div > img {
     color: white;
     z-index: 2;
     font-family: 'Avenir';
-    font-weight: 500;
+    font-weight: 600;
     margin-top: .5rem;
+    text-align: center;
 }
-
 
 .vegetarian {
     width: 1.5rem;
@@ -249,7 +270,7 @@ footer {
 
 }
 
-/* CSS that applies to browsers that support grid */
+/*//CSS that applies to browsers that support grid*/
 @supports (display: grid) {
 
     section {
@@ -260,7 +281,6 @@ footer {
 }
 
 /* END @supports grid */
-
 
 
 /*MEDIA QUERYS*/

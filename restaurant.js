@@ -94,7 +94,7 @@ function showProduct(myProduct) {
     //fill out the template//
     console.log("what are you? I am a " + myProduct.category);
     myCopy.querySelector(".dish-title").textContent = myProduct.name;
-    myCopy.querySelector(".short-description").textContent = myProduct.name;
+    myCopy.querySelector(".short-description").textContent = myProduct.shortdescription;
 
     myCopy.querySelector("button").addEventListener("click", () => {
         fetch(`https://kea-alt-del.dk/t5/api/product?id=`+myProduct.id)
