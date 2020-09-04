@@ -16,18 +16,11 @@ html {
     padding: 2rem;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
 
 nav a {
     font-family: 'avenir', sans-serif;
     display: inline;
     color: black;
-    font-size: 18px;
-    width: 5%;
-    padding: .5rem;
     text-decoration: none;
     text-transform: capitalize;
     cursor: pointer;
@@ -35,7 +28,6 @@ nav a {
 
 li a {
     text-decoration: none;
-    /*    text-align: center;*/
 }
 
 details {
@@ -302,23 +294,46 @@ footer {
 /*mobile view*/
 @media only screen and (max-width: 599px) {
 
-    nav li {
-        font-size: 3vw;
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: .8rem;
     }
 }
 
 /*tablet view*/
 @media only screen and (max-width: 899px) and (min-width: 600px) {
 
-    nav li {
-        font-size: 2.3vw;
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+/*        width: 3%;*/
+        padding: .5rem;
+        font-size: 17px;
     }
 }
 
 /*//big screen//*/
 @media only screen and (min-width: 900px) {
 
-    nav li {
-        font-size: 1.2vw;
+
+    nav {
+
+        display: flex;
+        justify-content: center;
     }
+
+    nav a {
+        font-size: 18px;
+        width: 5%;
+        padding: .5rem;
+    }
+
 }
