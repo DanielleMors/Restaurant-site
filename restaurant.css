@@ -145,6 +145,16 @@ li {
     grid-row: 1;
 }
 
+.vegetarian {
+    width: 1.5rem;
+    height: auto;
+    justify-self: end;
+    align-self: end;
+    padding: .5rem;
+     display: grid;
+    position: relative;
+}
+
 .more-info {
     margin-top: auto;
     width: 100%;
@@ -185,28 +195,16 @@ article {
 
 }
 
-article > img {
-    order: -1;
-    width: 100%;
-    height: auto;
-    border-radius: 4%;
-}
-
-article:hover > div > img {
+article:hover > div > img.img-dish {
     opacity: 100;
 }
 
-div > img {
+div > img.img-dish {
     order: -1;
     width: 100%;
     height: auto;
     border-radius: 4%;
     opacity: .8;
-}
-
-.icon {
-    width: 1rem;
-    height: 1.5rem;
 }
 
 .soldOut {
@@ -222,25 +220,9 @@ div > img {
     text-align: center;
 }
 
-.vegetarian {
-    width: 1.5rem;
-    height: auto;
-    justify-self: end;
-    align-self: end;
-    padding: .5rem;
-}
-
 .alcohol p {
     font-style: italic;
     font-size: 13px;
-}
-
-.icon-weed {
-    width: 1rem;
-    height: auto;
-    grid-area: ic;
-    padding-top: 1.1rem;
-    padding-left: .3rem;
 }
 
 .hidden {
@@ -265,6 +247,12 @@ div > img {
     height: auto;
     margin: 10rem;
     padding: 2rem;
+}
+
+.modal-name {
+    font-family: 'avenir';
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /*ADD THE POSITION ALSO TO ARTICLE/PRODUCT ' RELATIVE '*/

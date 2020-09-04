@@ -86,11 +86,6 @@ function showProduct(myProduct) {
         myCopy.querySelector("article").classList.add("alcoholic");
     }
 
-    //    if (!myProduct.allergens) {
-    //        myCopy.querySelector(".allergens").remove();
-    //        myCopy.querySelector("article").classList.add("lactose");
-    //    }
-
     //fill out the template//
     console.log("what are you? I am a " + myProduct.category);
     myCopy.querySelector(".dish-title").textContent = myProduct.name;
@@ -116,6 +111,8 @@ const modal = document.querySelector(".modal-background");
 function showDetails(data) {
     modal.querySelector(".modal-name").textContent = data.name;
     modal.querySelector(".modal-description").textContent = data.longdescription;
+    modal.querySelector(".modal-price").textContent = data.price + ", -";
+
     //...
     modal.classList.remove("hidden");
 }
