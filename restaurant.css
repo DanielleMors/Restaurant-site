@@ -151,7 +151,7 @@ li {
     justify-self: end;
     align-self: end;
     padding: .5rem;
-     display: grid;
+    display: grid;
     position: relative;
 }
 
@@ -243,7 +243,9 @@ div > img.img-dish {
     background-color: #F0F9FA;
     border: 3px;
     border-radius: 2rem;
-    width: 50%;
+    left: 10;
+    right: 10;
+/*    width: 50%;*/
     height: auto;
     margin: 10rem;
     padding: 2rem;
@@ -252,6 +254,18 @@ div > img.img-dish {
 .modal-name {
     font-family: 'avenir';
     font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal-price-discount {
+    font-family: 'avenir';
+    font-style: normal;
+    text-decoration-line: line-through;
+    color: darkred;
+}
+
+.modal-price {
     font-size: 20px;
 }
 
@@ -314,7 +328,6 @@ footer p {
     }
 
     nav a {
-        /*        width: 3%;*/
         padding: .5rem;
         font-size: 17px;
     }
@@ -332,7 +345,6 @@ footer p {
 
     nav a {
         font-size: 18px;
-        width: 5%;
         padding: .5rem;
     }
 

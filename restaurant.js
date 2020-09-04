@@ -86,6 +86,12 @@ function showProduct(myProduct) {
         myCopy.querySelector("article").classList.add("alcoholic");
     }
 
+    if (!myProduct.discount) {
+        myCopy.querySelector(".discount").remove();
+        myCopy.querySelector("article").classList.add("discounted");
+    }
+
+
     //fill out the template//
     console.log("what are you? I am a " + myProduct.category);
     myCopy.querySelector(".dish-title").textContent = myProduct.name;
@@ -111,7 +117,20 @@ const modal = document.querySelector(".modal-background");
 function showDetails(data) {
     modal.querySelector(".modal-name").textContent = data.name;
     modal.querySelector(".modal-description").textContent = data.longdescription;
-    modal.querySelector(".modal-price").textContent = data.price + ", -";
+
+     if (data.discount == 0) {
+        modal.querySelector(".modal-price").textContent = data.price + ", -";
+        modal.querySelector(".modal-price-discount").textContent=" ";
+
+    } else {
+        let discount = data.price - (data.price * data.discount * 0.01);
+        modal.querySelector(".modal-price").textContent = discount + ",-";
+        modal.querySelector(".modal-price-discount").classList.remove("hidden");
+        modal.querySelector(".modal-price-discount").textContent = data.price + ",-";
+    }
+
+
+//    modal.querySelector(".modal-price").textContent = data.price + ", -";
 
     //...
     modal.classList.remove("hidden");
@@ -139,11 +158,11 @@ function alcoholFilterClicked() {
     })
 }
 
-const lactoseFilter = document.querySelector("#lactoseFilter");
-lactoseFilter.addEventListener("click", lactoseFilterClicked);
+const discountFilter = document.querySelector("#discountFilter");
+discountFilter.addEventListener("click", discountFilterClicked);
 
-function lactoseFilterClicked() {
-    const articles = document.querySelectorAll("article:not(.lactose)");
+function discountFilterClicked() {
+    const articles = document.querySelectorAll("article.discounted");
     articles.forEach(elem => {
         elem.classList.toggle("hidden");
     })
