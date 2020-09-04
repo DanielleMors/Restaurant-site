@@ -67,9 +67,9 @@ function showProduct(myProduct) {
         myCopy.querySelector(".price").textContent = myProduct.price + ", -";
     } else {
         let discount = myProduct.price - (myProduct.price * myProduct.discount * 0.01);
-        myCopy.querySelector(".price").textContent = myProduct.price + ",-";
+        myCopy.querySelector(".price").textContent = discount + ",-";
         myCopy.querySelector(".price-discount").classList.remove("hidden");
-        myCopy.querySelector(".price-discount").textContent = discount + ",-";
+        myCopy.querySelector(".price-discount").textContent = myProduct.price + ",-";
     }
 
     if (!myProduct.vegetarian) {
